@@ -28,8 +28,8 @@ apps=(
   watchman
   git
   git-extras
-  gnu-sed --with-default-names
-  grep --with-default-names
+  gnu-sed
+  grep
   hub
   imagemagick
   jq
