@@ -1,9 +1,3 @@
-# Shortcuts
-
-alias _="sudo"
-alias v="vim"
-alias rr="rm -rf"
-
 # Git Shortcuts
 
 alias g="git"
@@ -16,17 +10,6 @@ alias json="json -c"
 alias psgrep="psgrep -i"
 
 is-executable hub && eval "$(hub alias -s)" # alias git=hub
-
-# Global aliases
-
-if $(is-supported "alias -g"); then
-  alias -g G="| grep -i"
-  alias -g H="| head"
-  alias -g T="| tail"
-  alias -g L="| less"
-fi
-
-# List declared aliases, functions
 
 alias listaliases="alias | sed 's/=.*//'"
 alias listfunctions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'" # show non _prefixed functions
@@ -44,10 +27,6 @@ alias ld="ls -ld $LS_COLORS */"
 
 unset LS_COLORS LS_TIMESTYLEISO LS_GROUPDIRSFIRST
 
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias -- -="cd -"                  # Go to previous dir with -
 alias cd.='cd $(readlink -f .)'    # Go to real dir (i.e. if current dir is linked)
 
 alias tree="tree -A"
@@ -60,12 +39,6 @@ alias cpwd="pwd|tr -d '\n'|pbcopy"
 # php
 
 alias artisan="php artisan"
-
-# npm
-
-alias ni="npm install"
-alias nun="npm uninstall"
-alias nup="npm update"
 
 # Network
 
@@ -85,6 +58,5 @@ alias cleanupad="find . -type d -name '.AppleD*' -ls -exec /bin/rm -r {} \;"
 
 # Miscellaneous
 
-alias quit="exit"
 alias week="date +%V"
 alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
