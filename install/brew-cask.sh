@@ -7,10 +7,10 @@ brew tap caskroom/versions
 
 apps=(
   alfred
+  android-platform-tools
+  android-studio
   dropbox
-  glimmerblocker
   clamxav
-  hammerspoon
   jumpcut
   macdown
   microsoft-office
@@ -25,22 +25,15 @@ apps=(
   google-chrome
   google-chrome-canary
   opera
-  vagrant
-  notion
-  sequel-pro
-  psequel
   iterm2
   visual-studio-code
   github
-  sourcetree
   transmit
   virtualbox
   postman
-  postico
   sublime-text
   sketch
   tableplus
-  deco
   docker
   kitematic
   # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
@@ -50,7 +43,6 @@ apps=(
   quicklook-json
   qlprettypatch
   quicklook-csv
-  webpquicklook
   suspicious-package
 )
 
@@ -73,6 +65,9 @@ apps=(
     font-dejavu-sans
     font-fira-code
     font-josefin-sans
+    font-museo
+    font-open-sans
+    font-roboto
 )
 
 brew cask install "${apps[@]}"
