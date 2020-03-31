@@ -38,7 +38,6 @@ apps=(
   docker
   kitematic
   # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-  qlcolorcode
   qlstephen
   qlmarkdown
   quicklook-json
