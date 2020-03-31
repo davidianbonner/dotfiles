@@ -28,16 +28,14 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 . "$DOTFILES_DIR/install/bash.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 
-if [ "$(uname)" == "Darwin" ]; then
-  . "$DOTFILES_DIR/install/brew-cask.sh"
-  . "$DOTFILES_DIR/install/gem.sh"
-  . "$DOTFILES_DIR/install/dev/composer.sh"
-  . "$DOTFILES_DIR/install/dev/react.sh"
-  . "$DOTFILES_DIR/install/dev/valet.sh"
-  ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
+. "$DOTFILES_DIR/install/brew-cask.sh"
+. "$DOTFILES_DIR/install/gem.sh"
+. "$DOTFILES_DIR/install/dev/composer.sh"
+. "$DOTFILES_DIR/install/dev/react.sh"
+. "$DOTFILES_DIR/install/dev/valet.sh"
+ln -sfv "$DOTFILES_DIR/etc/mackup/.mackup.cfg" ~
 
-  ln -sfv "$DOTFILES_DIR/sublime/*" '~/Library/Application Support/Sublime Text 3/Packages/User/'
-fi
+ln -sfv "$DOTFILES_DIR/sublime/*" '~/Library/Application Support/Sublime Text 3/Packages/User/'
 
 mkdir ~/.ssh
 # curl -o ~/.ssh/id_rsa.pub https://github.com/davidianbonner.keys
