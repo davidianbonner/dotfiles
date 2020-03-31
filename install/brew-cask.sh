@@ -15,6 +15,8 @@ apps=(
   jumpcut
   macdown
   microsoft-office
+  microsoft-teams
+  onedrive
   skype
   slack
   spotify
