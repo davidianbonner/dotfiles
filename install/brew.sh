@@ -10,6 +10,7 @@ brew upgrade
 # battery - brew tap Goles/battery
 
 apps=(
+  awscli
   libjpeg
   bash-completion2
   bats
@@ -20,6 +21,8 @@ apps=(
   ffmpeg
   fasd
   gifsicle
+  go
+  fastlane
   highlight
   node
   watchman
@@ -28,7 +31,6 @@ apps=(
   gnu-sed --with-default-names
   grep --with-default-names
   hub
-  httpie
   imagemagick
   jq
   mackup
@@ -38,8 +40,6 @@ apps=(
   python
   composer
   shellcheck
-  ssh-copy-id
-  the_silver_searcher
   tree
   vim
   wget
