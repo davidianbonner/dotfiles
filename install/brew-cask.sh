@@ -16,7 +16,6 @@ apps=(
   macdown
   microsoft-office
   microsoft-teams
-  onedrive
   skype
   slack
   spotify
