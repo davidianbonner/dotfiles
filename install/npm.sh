@@ -5,13 +5,8 @@ nvm install 8.12.0
 # Globally install with npm
 
 packages=(
-  diff-so-fancy
-  get-port-cli
+  serverless
   nodemon
-  release-it
-  svgo
-  tldr
-  underscore-cli
 )
 
 npm install -g "${packages[@]}"
