@@ -1,7 +1,8 @@
 # Install Caskroom
 
-brew tap caskroom/cask
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
 
 # Install packages
 
@@ -50,8 +51,6 @@ brew cask install "${apps[@]}"
 
 # Link Hammerspoon config
 [ -d ~/.hammerspoon ] || ln -sfv "$DOTFILES_DIR/etc/hammerspoon/" ~/.hammerspoon
-
-brew tap caskroom/fonts
 
 apps=(
     font-fira-code
