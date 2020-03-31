@@ -1,4 +1,4 @@
-COMPUTER_NAME="Continuum"
+COMPUTER_NAME="David's iMac"
 
 osascript -e 'tell application "System Preferences" to quit'
 
